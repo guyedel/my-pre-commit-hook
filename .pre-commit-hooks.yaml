@@ -1,0 +1,6 @@
+- id: unified-linter-example
+  name: unified-linter-example
+  description: united dazz linting configuration
+  entry: lint
+  language: docker
+  files: \.py$
