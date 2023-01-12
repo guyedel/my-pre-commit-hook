@@ -1,4 +1,4 @@
-- id: hook
+- id: dazz-hook
   name: hook
   description: "Black: The uncompromising Python code formatter"
   entry: hook
