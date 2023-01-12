@@ -1,7 +1,7 @@
 - id: dazz-hook
   name: hook
   description: "Black: The uncompromising Python code formatter"
-  entry: hook
+  entry: python -m hook
   language: python
   minimum_pre_commit_version: 2.9.2
   require_serial: true
