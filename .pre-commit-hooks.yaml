@@ -1,0 +1,9 @@
+- id: hook
+  name: hook
+  description: "Black: The uncompromising Python code formatter"
+  entry: hook
+  language: python
+  minimum_pre_commit_version: 2.9.2
+  require_serial: true
+  types_or: [python, pyi]
+

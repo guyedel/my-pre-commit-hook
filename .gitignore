@@ -1,0 +1,18 @@
+# jet brains
+.idea
+
+# python
+*.py[cx]
+.pytest_cache
+*.egg-info
+venv
+.venv
+__pycache__
+results*/
+integration*json
+# coverage
+.coverage
+
+sample*.json
+.token
+.DS_Store
