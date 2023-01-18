@@ -7,3 +7,11 @@
   require_serial: true
   types_or: [python, pyi]
 
+- id: dazz-hook-bash
+  name: hook-script
+  description: "Black: The uncompromising Python code formatter"
+  entry: run.sh
+  language: script
+  minimum_pre_commit_version: 2.9.2
+  require_serial: true
+  types_or: [python, pyi]
