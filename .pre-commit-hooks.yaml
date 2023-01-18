@@ -1,17 +1,6 @@
-- id: dazz-hook
-  name: hook
-  description: "Black: The uncompromising Python code formatter"
-  entry: dazz-hooks
-  language: python
-  minimum_pre_commit_version: 2.9.2
-  require_serial: true
-  types_or: [python, pyi]
-
-- id: dazz-hook-bash
-  name: hook-script
-  description: "Black: The uncompromising Python code formatter"
-  entry: run.sh
-  language: script
-  minimum_pre_commit_version: 2.9.2
-  require_serial: true
-  types_or: [python, pyi]
+- id: dazz-united-linter
+  name: dazz-united-linter
+  description: united dazz linting configuration
+  entry: lint
+  language: docker
+  files: \.py$

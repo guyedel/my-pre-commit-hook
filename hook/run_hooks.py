@@ -1,8 +1,8 @@
 import os
 import sys
 
-from click import echo
 import black
+from click import echo
 from isort.main import main as isort_main
 from pylint.lint import Run as PylintRun
 

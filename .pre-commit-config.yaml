@@ -2,4 +2,4 @@ repos:
   - repo: .
     rev: main
     hooks:
-      - id: dazz-hook-bash
+      - id: dazz-united-linter
