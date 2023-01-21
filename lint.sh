@@ -1,12 +1,14 @@
-#!/bin/bash
+#!/bin/sh
+
+CONFIG_FILE=".lint-config.json"
 
 should_run() {
   config_name=$1
-  if [ ! -f ".lint-config" ]; then
+  if [ ! -f $CONFIG_FILE ]; then
       return 0
   fi
-  value=$(jq -e ".$config_name" .lint-config)
-  if [ "$value" == "\"disable\"" ]; then
+  value=$(jq -e ".$config_name" $CONFIG_FILE)
+  if [ "$value" = "\"disable\"" ]; then
       echo "[!] $config_name is disabled"
       return 1
   fi
@@ -43,4 +45,4 @@ if should_run "flake8"; then
   fi
 fi
 
-exit 0
+exit 1

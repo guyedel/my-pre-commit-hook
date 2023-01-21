@@ -1,17 +1,11 @@
-FROM ubuntu:23.04
+FROM alpine:3.17.1
 
-RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        jq \
-        git \
-        python3.10  \
-        python3-pip && \
-    apt-get clean
+RUN apk add --update --no-cache python3 py3-pip jq git
+
+RUN pip3 install -U pip setuptools
 
 COPY ./reqs_for_setup.txt /reqs_for_setup.txt
-
-RUN pip install -U pip
-RUN pip install -r /reqs_for_setup.txt
+RUN pip3 install -r /reqs_for_setup.txt
 
 ENV PATH=/scripts:$PATH
 
