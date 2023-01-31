@@ -1,3 +1,7 @@
 black @ git+https://github.com/psf/black@22.3.0
 isort @ git+https://github.com/timothycrosley/isort@5.7.0
 flake8 @ git+https://github.com/pycqa/flake8@5.0.4
+pyupgrade==3.3.1
+pyflakes==3.0.01
+mypy==0.991
+sourcery-cli==1.0.3

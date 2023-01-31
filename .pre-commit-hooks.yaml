@@ -1,6 +1,6 @@
 - id: dazz-united-linter
   name: dazz-united-linter
   description: united dazz linting configuration
-  entry: lint
+  entry: ./lint
   language: docker
   files: \.py$

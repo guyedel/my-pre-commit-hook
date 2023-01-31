@@ -1,0 +1,19 @@
+version: '1'
+
+ignore:
+  - .git
+  - .venv
+  - .results
+  - .idea
+
+rule_settings:
+  enable:
+    - default
+  disable:
+    - use-next # https://docs.sourcery.ai/Reference/Default-Rules/refactorings/use-next/ not so readable imo.
+  rule_types:
+    - refactoring
+    - suggestion
+    - comment
+
+  python_version: '3.10'
